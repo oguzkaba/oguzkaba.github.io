@@ -32,8 +32,14 @@
   <!-- This script installs service_worker.js to provide PWA functionality to
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.min.js"></script>
+  <script type="text/javascript">
+    pdfjsLib.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.worker.min.js";
+  </script>
+
   <script>
-    var serviceWorkerVersion = '3691376832';
+    var serviceWorkerVersion = '3984944443';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -96,20 +102,6 @@
       loadMainDartJs();
     }
   </script>
-  <!-- Link to pdf.js library -->
-  <script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.min.js"></script>
-  <script type="text/javascript">
-    // Link to worker for pdf.js library
-    pdfjsLib.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.worker.min.js";
-  </script>
-    <script>
-      // This prevents zooming in using CTRL + mouse wheel.
-      document.addEventListener('wheel', function(e) {
-        e.ctrlKey && e.preventDefault();
-      }, {
-        passive: false,
-      });
-    </script>
 </body>
 
 </html>
