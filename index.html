@@ -24,7 +24,7 @@
   <meta name="apple-mobile-web-app-title" content="flutter_accounting_app">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
-  <title>Accounting App</title>
+  <title>flutter_accounting_app</title>
   <link rel="manifest" href="manifest.json">
 </head>
 
@@ -33,7 +33,7 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = '2224469941';
+    var serviceWorkerVersion = '3691376832';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -102,14 +102,14 @@
     // Link to worker for pdf.js library
     pdfjsLib.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.7.570/pdf.worker.min.js";
   </script>
-  <script>
-    // This prevents zooming in using CTRL + mouse wheel.
-    document.addEventListener('wheel', function(e) {
-      e.ctrlKey && e.preventDefault();
-    }, {
-      passive: false,
-    });
-  </script>
+    <script>
+      // This prevents zooming in using CTRL + mouse wheel.
+      document.addEventListener('wheel', function(e) {
+        e.ctrlKey && e.preventDefault();
+      }, {
+        passive: false,
+      });
+    </script>
 </body>
 
 </html>
