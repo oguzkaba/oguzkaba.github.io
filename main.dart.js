@@ -70130,7 +70130,7 @@ s=t.N
 s=P.a7(["Access-Control_Allow_Origin","*"],s,s)
 r=p.gtd()
 q=new N.a7m()
-q.a="https://www.aksel.com.tr/pdf/test-sayfalari/600dpi_Test.pdf"
+q.a="https://cdn.syncfusion.com/content/PDFViewer/flutter-succinctly.pdf"
 q.b=s
 return V.arg(new T.cI(C.fQ,M.abL(new E.xC(n,m,l,!0,new P.I(1/0,56),o),new X.Cm(q,r,new D.als(p),p.d)),o))},
 aqM:function(){var s=this
