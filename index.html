@@ -1,55 +1,336 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    Fore more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-  -->
-  <base href="/">
-
-  <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="onesystem">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>onesystem</title>
-  <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" type="text/css" href="splash/style.css">
+  <title>My Portfolio | oguzkaba</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="HTML5 website template">
+  <meta name="keywords" content="global, template, html, sass, jquery">
+  <meta name="author" content="Bucky Maler">
+  <link rel="stylesheet" href="assets/css/main.css">
 </head>
-<body style="position: fixed; inset: 0px; overflow: hidden; padding: 0px; margin: 0px; user-select: none; touch-action: none; font: 14px sans-serif; color: red;">
-  <!-- This script installs service_worker.js to provide PWA functionality to
-       application. For more information, see:
-       https://developers.google.com/web/fundamentals/primers/service-workers -->
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=3890831406');
-      });
-    }
-  </script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.min.js"></script>
-  <script type="text/javascript">
-     pdfjsLib.GlobalWorkerOptions.workerSrc = "//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.4.456/pdf.worker.min.js";
-  </script>
-  <script src="main.dart.js" type="application/javascript"></script>
-  <picture id="splash">
-    <source srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x" media="(prefers-color-scheme: light) or (prefers-color-scheme: no-preference)">
-    <source srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x" media="(prefers-color-scheme: dark)">
-    <img class="center" src="splash/img/light-1x.png" />
-  </picture>
+
+<body>
+
+  <!-- notification for small viewports and landscape oriented smartphones -->
+  <div class="device-notification">
+    <a class="device-notification--logo" href="#0">
+      <img src="assets/img/logo.svg" alt="OK">
+      <p>OK</p>
+    </a>
+    <p class="device-notification--message">Global has so much to offer that we must request you orient your device to
+      portrait or find a larger screen. You won't be disappointed.</p>
+  </div>
+
+  <div class="perspective effect-rotate-left">
+    <div class="container">
+      <div class="outer-nav--return"></div>
+      <div id="viewport" class="l-viewport">
+        <div class="l-wrapper">
+          <header class="header">
+            <a class="header--logo" href="#0">
+              <img src="assets/img/logo.svg" alt="Global">
+              <p>oguzkaba</p>
+            </a>
+            <button class="header--cta cta">Hire Me</button>
+            <div class="header--nav-toggle">
+              <span></span>
+            </div>
+          </header>
+          <nav class="l-side-nav">
+            <ul class="side-nav">
+              <li class="is-active"><span>Home</span></li>
+              <li><span>Works</span></li>
+              <li><span>About</span></li>
+              <li><span>Contact</span></li>
+              <li><span>Hire Me</span></li>
+            </ul>
+          </nav>
+          <ul class="l-main-content main-content">
+            <li class="l-section section section--is-active">
+              <div class="intro">
+                <div class="intro--banner">
+                  <h1>Your next<br>interactive<br>experience</h1>
+                  <button class="cta">Hire Me
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                      style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                        <path
+                          d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                      </g>
+                    </svg>
+                    <span class="btn-background"></span>
+                  </button>
+                  <img src="assets/img/introduction-visual.png" alt="Welcome">
+                </div>
+                <div class="intro--options">
+                  <a href="#0">
+                    <h3>Language &amp; Framework</h3>
+                    <img src="assets/img/skills/lang-and-fw/flutter-dark.svg" alt="flutter">
+                    <img src="assets/img/skills/lang-and-fw/dart-dark.svg" alt="dart">
+                    <img src="assets/img/skills/lang-and-fw/python-dark.svg" alt="python">
+                    <img src="assets/img/skills/lang-and-fw/swift-dark.svg" alt="swift">
+                    <img src="assets/img/skills/lang-and-fw/csharp-dark.svg" alt="csharp">
+                    <img src="assets/img/skills/lang-and-fw/nodejs-dark.svg" alt="nodejs">
+                    <p>Experience -> Flutter, Dart, Python, Swift </br>Learning -> C#, nodeJS</p>
+                  </a>
+                  <a href="#0">
+                    <h3>DB &amp; Backend Service</h3>
+                    <img src="assets/img/skills/database-tools/firebase-dark.svg" alt="Firebase">
+                    <img src="assets/img/skills/database-tools/mysql-dark.svg" alt="MySQL">
+                    <img src="assets/img/skills/database-tools/postgresql-dark.svg" alt="Postgre">
+                    <img src="assets/img/skills/database-tools/supabase-dark.svg" alt="Supabase">
+                    <p>Experience -> Firebase, MySQL </br>Learning -> Postgre, Supabase</p>
+                  </a>
+                  <a href="#0">
+                    <h3>Design &amp; Other Tool</h3>
+                    <img src="assets/img/skills/design-and-other/figma-dark.svg" alt="Figma">
+                    <img src="assets/img/skills/design-and-other/xd-dark.svg" alt="Adobe XD">
+                    <img src="assets/img/skills/design-and-other/heroku-dark.svg" alt="Heroku">
+                    <img src="assets/img/skills/design-and-other/docker-dark.svg" alt="Docker">
+                    <p>Experience -> Figma, Adobe XD </br>Learning -> Heroku, Docker</p>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <div class="work">
+                <h2>Selected work</h2>
+                <div class="work--lockup">
+                  <ul class="slider">
+                    <li class="slider--item slider--item-left">
+                      <a href="https://github.com/oguzkaba/linda_estore">
+                        <div class="slider--item-image">
+                          <img src="assets/img/works/linda-estore.svg" alt="LindaEStore">
+                        </div>
+                        <p class="slider--item-title">Linda E-Store</p>
+                        <p class="slider--item-description">A flutter ecommerce application that uses Fake Store API as
+                          backend.</p>
+                      </a>
+                    </li>
+                    <li class="slider--item slider--item-center">
+                      <a href="#0">
+                        <div class="slider--item-image">
+                          <img src="assets/img/works/one-system.svg" alt="Metiew and Smith">
+                        </div>
+                        <p class="slider--item-title">OneSystem</p>
+                        <p class="slider--item-description">Welding tracking system software with adaptable, dynamic,
+                          easy, fast and multi-platform support for welded manufacturing companies.</p>
+                      </a>
+                    </li>
+                    <li class="slider--item slider--item-right">
+                      <a href="#0">
+                        <div class="slider--item-image">
+                          <img src="assets/img/works/doktor-app.svg" alt="Alex Nowak">
+                        </div>
+                        <p class="slider--item-title">Doktor App</p>
+                        <p class="slider--item-description">Mobile doctor appointment application, freelance module
+                          developments.</p>
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="slider--prev">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                      style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                        <path d="M561,1169C525,1155,10,640,3,612c-3-13,1-36,8-52c8-15,134-145,281-289C527,41,562,10,590,10c22,0,41,9,61,29
+                    c55,55,49,64-163,278L296,510h575c564,0,576,0,597,20c46,43,37,109-18,137c-19,10-159,13-590,13l-565,1l182,180
+                    c101,99,187,188,193,199c16,30,12,57-12,84C631,1174,595,1183,561,1169z" />
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="slider--next">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                      style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                      <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                        <path
+                          d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <div class="about">
+                <div class="about--banner">
+                  <h2>Hi 👋 <br /> My name is <br />Oguz KABA</h2>
+                  <p>
+
+                  <h3>I'M A SOFTWARE DEVELOPER.</h3>
+                  <br />🎓 I'm a "Management Information Systems" student at Anadolu University
+                  <br />🌍 I'm based in Kocaeli/Turkey
+                  <br />🚀 I'm currently working on OneSystem</p>
+
+
+                  <a href=" https://www.linkedin.com/in/oguzkaba"> 
+                    Career
+                    <span>
+                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 118"
+                        style="enable-background:new 0 0 150 118;" xml:space="preserve">
+                        <g transform="translate(0.000000,118.000000) scale(0.100000,-0.100000)">
+                          <path
+                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1c-431,0-571-3-590-13c-55-28-64-94-18-137c21-20,33-20,597-20h575l-192-193C800,103,794,94,849,39c20-20,39-29,61-29c28,0,63,30,298,262c147,144,272,271,279,282c30,51,23,60-219,304C947,1180,926,1196,870,1167z" />
+                        </g>
+                      </svg>
+                    </span>
+                  </a>
+                  <img src="assets/img/about/about.svg" alt="About Me">
+                </div>
+                <div class="about--options">
+                  <a href="https://www.linkedin.com/in/oguzkaba">
+                    <h3>Certificates</h3>
+                  </a>
+                  <a href="https://www.hackerrank.com/profile/oguzkaba1987">
+                    <h3>Challenges</h3>
+                  </a>
+                  <a href="https://www.github.com/oguzkaba">
+                    <h3>History</h3>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <div class="contact">
+                <div class="contact--lockup">
+                  <div class="modal">
+                    <div class="modal--information">
+                      <p>Kocaeli, TÜRKİYE</p>
+                      <a href="mailto:ouremail@gmail.com">oguz-kaba@hotmail.com</a>
+                      <a href="tel:+905426852005">+90 542 6852005</a>
+                    </div>
+                    <ul class="modal--options">
+                      <li><a href="https://github.com/oguzkaba">Github</a></li>
+                      <li><a href="https://www.linkedin.com/in/oguzkaba">Linkedin</a></li>
+                      <li><a href="mailto:oguz-kaba@hotmail.com">Contact Me</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="l-section section">
+              <div class="hire">
+                <h2>You want us to do</h2>
+                <!-- checkout formspree.io for easy form setup -->
+                <form class="work-request">
+                  <div class="work-request--options">
+                    <span class="options-a">
+                      <input id="opt-1" type="checkbox" value="app design">
+                      <label for="opt-1">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
+                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                            <path
+                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                          </g>
+                        </svg>
+                        App Design
+                      </label>
+                      <input id="opt-2" type="checkbox" value="graphic design">
+                      <label for="opt-2">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
+                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                            <path
+                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                          </g>
+                        </svg>
+                        Database Design
+                      </label>
+                      <input id="opt-3" type="checkbox" value="motion design">
+                      <label for="opt-3">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
+                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                            <path
+                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                          </g>
+                        </svg>
+                        UI Design
+                      </label>
+                    </span>
+                    <span class="options-b">
+                      <input id="opt-4" type="checkbox" value="ux design">
+                      <label for="opt-4">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
+                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                            <path
+                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                          </g>
+                        </svg>
+                        UX Design
+                      </label>
+                      <input id="opt-5" type="checkbox" value="mobile-app">
+                      <label for="opt-5">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 150 111"
+                          style="enable-background:new 0 0 150 111;" xml:space="preserve">
+                          <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
+                            <path
+                              d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z" />
+                          </g>
+                        </svg>
+                        Mobile App
+                      </label>
+
+                    </span>
+                  </div>
+                  <div class="work-request--information">
+                    <div class="information-name">
+                      <input id="name" type="text" spellcheck="false">
+                      <label for="name">Name</label>
+                    </div>
+                    <div class="information-email">
+                      <input id="email" type="email" spellcheck="false">
+                      <label for="email">Email</label>
+                    </div>
+                  </div>
+                  <input type="submit" value="Send Request">
+                  <button style="
+                  border: 2px solid #0f33ff;   
+                  margin-top: 10px;
+                  width: 250px;
+                  max-width: 50%;
+                  line-height: 40px;
+                  font-size: 14px;
+                  font-weight: 700;
+                  text-transform: uppercase;
+                  background-color: transparent;;
+                  color: #0f33ff;
+                  border-radius: 0"> <a href="assets/pdf/cv-421dab4e82b11addcf537b94a72312e2-1702550600.pdf" download
+                      class="download">
+                      Download CV
+                    </a></button>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <ul class="outer-nav">
+      <li class="is-active">Home</li>
+      <li>Works</li>
+      <li>About</li>
+      <li>Contact</li>
+      <li>Hire me</li>
+    </ul>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
+  <script src="assets/js/functions-min.js"></script>
 </body>
+
 </html>
